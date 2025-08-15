@@ -12,7 +12,7 @@ function App() {
   <div
   className={`min-vh-100 text-${darkMode ? "white" : "dark"}`}
   style={{
-    backgroundImage: "url('/images/delicious-food.jpg')",
+    // backgroundImage: "url('/images/delicious-food.jpg')",
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",

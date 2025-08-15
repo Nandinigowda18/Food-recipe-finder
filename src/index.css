@@ -1,7 +1,7 @@
 
 body {
   font-family: sans-serif;
-   background-image: url('../src/assets/food.png'); /* your image path */
+   background-image: url('../src/assets/foods.jpg'); /* your image path */
   background-size: cover;       /* makes it fill the whole page */
   background-position: center;  /* centers the image */
   background-repeat: no-repeat; /* prevents tiling */

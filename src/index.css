@@ -1,0 +1,49 @@
+
+body {
+  font-family: sans-serif;
+   background-image: url('../src/assets/food.png'); /* your image path */
+  background-size: cover;       /* makes it fill the whole page */
+  background-position: center;  /* centers the image */
+  background-repeat: no-repeat; /* prevents tiling */
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* 30% black overlay */
+  z-index: -1;
+}
+
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Custom image styling */
+.custom-img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px; /* Rounded corners */
+  object-fit: cover; /* Prevent distortion */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Example hover effect */
+.custom-img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
